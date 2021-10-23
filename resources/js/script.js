@@ -16,6 +16,7 @@ function load(src, callback) {
 }
 
 function handlePathname(path) {
+    console.log(path)
     let route = router[path];
     root.querySelector(".content").innerHTML = route.build();
 }
