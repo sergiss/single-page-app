@@ -14,7 +14,7 @@ export default {
       <div class="content"></div>
 
       <footer id="footer">
-        <a href=${href} target="_blank"> &copy; ${year} ${label} </a>
+        <a href=${href} target="_blank" rel="noopener noreferrer"> &copy; ${year} ${label} </a>
       </footer>
     `
   }
