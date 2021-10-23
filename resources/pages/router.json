@@ -1,0 +1,19 @@
+[
+    {
+        "id": "blog",
+        "content": "/resources/pages/blog.js",
+        "default": true
+    },
+    {
+        "id": "about",
+        "content": "/resources/pages/about.js"
+    },
+    {
+        "id": "entry1",
+        "content": "/resources/pages/entries/entry1.js"
+    },
+    {
+        "id": "entry2",        
+        "content": "/resources/pages/entries/entry2.js"
+    }
+]
