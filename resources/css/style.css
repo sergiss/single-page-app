@@ -33,8 +33,7 @@ header h1 {
 
 footer {
   flex: 0;
-  background-color: gray;
-  color: white;
+  background-color: #616161;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,5 +47,5 @@ a:active {
   padding: 5px;
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 17px;
 }
