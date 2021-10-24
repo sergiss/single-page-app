@@ -4,7 +4,13 @@ var router;
 const root = document.querySelector("#root");
 root.innerHTML = index.build();
 
-function load(src, callback) {
+function handlePathname(path) { // resolve pathname
+    let route = router[path];
+    root.querySelector(".content").innerHTML = route.build();
+    return path;
+  }
+
+function load(src, callback) { // helper for load content
   var xhr = new XMLHttpRequest();
   xhr.onload = function () {
     if (xhr.status == 200) {
@@ -15,20 +21,14 @@ function load(src, callback) {
   xhr.send();
 }
 
-function handlePathname(path) {
-  let route = router[path];
-  root.querySelector(".content").innerHTML = route.build();
-  return path;
-}
-
-load("./resources/pages/router.json", (json) => { // load router
+load("./resources/pages/router.json", json => { // load router
   const routes = JSON.parse(json);
   const promises = [];
   let n = routes.length, i;
   for (i = 0; i < n; ++i) {
     promises.push(import(routes[i].content));
   }
-  Promise.all(promises).then((results) => { // wait async promises
+  Promise.all(promises).then(results => { // async wait for promises
     router = {}; // clear route
     for (i = 0; i < n; ++i) { // iterate results
       const value = results[i].default;
