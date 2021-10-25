@@ -7,7 +7,6 @@ root.innerHTML = index.build();
 function handlePathname(path) { // resolve pathname
     let route = state.router[path];
     if(!route || route === undefined) {
-      console.log(path, window.location)
       route = state.router["404"];
     }
     root.querySelector(".content").innerHTML = route.build(state);

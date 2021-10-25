@@ -2,41 +2,41 @@
 
     {
         "paths": ["404"],
-        "content": "../pages/404.js"
+        "content": "/resources/pages/404.js"
     },
     {
         "paths": ["/", "/index.html", "/blog"],
-        "content": "../pages/blog.js"
+        "content": "/resources/pages/blog.js"
     },
     {
         "paths": ["/about"],
-        "content": "../pages/about.js"
+        "content": "/resources/pages/about.js"
     },
     {
         "paths": ["/entry1"],
-        "content": "../pages/entries/entry1.js",
+        "content": "/resources/pages/entries/entry1.js",
         "date": "Aug 9, 2021",
         "title": "Entry 1",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "image": "./resources/images/entry1.jpg",
+        "image": "/resources/images/entry1.jpg",
         "type": "blog-entry" 
     },
     {
         "paths": ["/entry2"],     
-        "content": "../pages/entries/entry2.js",
+        "content": "/resources/pages/entries/entry2.js",
         "date": "Aug 10, 2021",
         "title": "Entry 2",
         "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        "image": "./resources/images/entry2.jpg",
+        "image": "/resources/images/entry2.jpg",
         "type": "blog-entry"
     },
     {
         "paths": ["/entry3"],     
-        "content": "../pages/entries/entry3.js",
+        "content": "/resources/pages/entries/entry3.js",
         "date": "Sep 02, 2021",
         "title": "Entry 3",
         "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.",
-        "image": "./resources/images/entry3.jpg",
+        "image": "/resources/images/entry3.jpg",
         "type": "blog-entry"
     }
 ]
