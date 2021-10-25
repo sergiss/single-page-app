@@ -1,14 +1,15 @@
 export default {
   build: () => {
 
-    const title = "Sergio Soriano";
+    const logo = "./favicon.ico";
+    const title = "My Blog";
     const year = new Date().getFullYear();
     const href = "http://sergiosoriano.com";
     const label = "Sergio Soriano";
 
     return `
       <header>
-        <h1>${title}</h1>
+        <img src="${logo}" alt="logo"/><h1>${title}</h1>
       </header>
 
       <div class="content"></div>

@@ -1,11 +1,14 @@
 export default {
     build: () => {
 
+      document.title = "Entry 2";
+
       return `
-      
-            <p>Desde Entry 2</p>
-            <a href="/entry1" content-link>Entry 1</a>
-        
-          `
+      <div class="entry">
+        <h2>Entry 2</h2>
+        <a class="button" href="/entry3" content-link>Entry 3</a>
+        <div></div>
+      </div>
+    `;
     }
   }

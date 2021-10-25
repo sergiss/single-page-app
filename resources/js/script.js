@@ -1,12 +1,16 @@
 import index from "../pages/index.js";
-var router;
+var state = {};
 
 const root = document.querySelector("#root");
 root.innerHTML = index.build();
 
 function handlePathname(path) { // resolve pathname
-    let route = router[path];
-    root.querySelector(".content").innerHTML = route.build();
+    let route = state.router[path];
+    if(!route || route === undefined) {
+      route = state.router["_not_found"];
+    }
+    root.querySelector(".content").innerHTML = route.build(state);
+    if(route.script) route.script();
     return path;
   }
 
@@ -22,18 +26,18 @@ function load(src, callback) { // helper for load content
 }
 
 load("./resources/pages/router.json", json => { // load router
-  const routes = JSON.parse(json);
+  state.routes = JSON.parse(json);
   const promises = [];
-  let n = routes.length, i;
+  let n = state.routes.length, i;
   for (i = 0; i < n; ++i) {
-    promises.push(import(routes[i].content));
+    promises.push(import(state.routes[i].content));
   }
   Promise.all(promises).then(results => { // async wait for promises
-    router = {}; // clear route
+    state.router = {}; // clear route
     for (i = 0; i < n; ++i) { // iterate results
       const value = results[i].default;
-      routes[i].paths.map((path) => {
-        router[path] = value; // store content (key, value)
+      state.routes[i].paths.map((path) => {
+        state.router[path] = value; // store content (key, value)
       });
     }
     history.replaceState(null, null, handlePathname(window.location.pathname)); // Load content
