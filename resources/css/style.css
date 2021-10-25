@@ -10,7 +10,6 @@ body {
 body {
   margin: 0;
   height: 100%;
-
   font-family: monospace, Arial, Helvetica, sans-serif;
 }
 
@@ -38,12 +37,11 @@ header img {
 }
 
 .content {
-  z-index: -1;
   flex: 1;
   display: flex;
   justify-content: center;
   background-color: #efefef;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 footer {
@@ -110,6 +108,7 @@ a:active {
    background-color: white;
    padding: 20px;
    margin: 10px 10px 20px 10px;
+   overflow: hidden;   
 }
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
@@ -120,7 +119,6 @@ a:active {
     padding: 0;
   }
 }
-
 
 /***** NOT FOUND ****/
 .not_found {

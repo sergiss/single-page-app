@@ -1,7 +1,7 @@
 [
 
     {
-        "paths": ["_not_found"],
+        "paths": ["404"],
         "content": "/resources/pages/404.js"
     },
     {

@@ -7,12 +7,13 @@ root.innerHTML = index.build();
 function handlePathname(path) { // resolve pathname
     let route = state.router[path];
     if(!route || route === undefined) {
-      route = state.router["_not_found"];
+      route = state.router["404"];
     }
     root.querySelector(".content").innerHTML = route.build(state);
     if(route.script) route.script();
     return path;
-  }
+}
+state.handlePathname = handlePathname;
 
 function load(src, callback) { // helper for load content
   var xhr = new XMLHttpRequest();

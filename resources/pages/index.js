@@ -9,7 +9,7 @@ export default {
 
     return `
       <header>
-        <img src="${logo}" alt="logo"/><h1>${title}</h1>
+        <img src="${logo}" alt="logo"/><h1><a href="/" content-link>${title}</a></h1>
       </header>
 
       <div class="content"></div>
