@@ -1,5 +1,4 @@
 # single-page-app
-Single Page App
 
 Single page web application implementation example without frameworks.
 
