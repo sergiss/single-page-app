@@ -41,6 +41,7 @@ load("./resources/pages/router.json", json => { // load router
         state.router[path] = value; // store content (key, value)
       });
     }
+    console.log(window.location)
     history.replaceState(null, null, handlePathname(window.location.pathname)); // Load content
   });
 });
