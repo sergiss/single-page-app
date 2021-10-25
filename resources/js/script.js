@@ -26,8 +26,7 @@ function load(src, callback) { // helper for load content
   xhr.send();
 }
 
-console.log(window.location)
-load("./resources/pages/router.json", json => { // load router
+load("/resources/pages/router.json", json => { // load router
   state.routes = JSON.parse(json);
   const promises = [];
   let n = state.routes.length, i;
