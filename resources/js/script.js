@@ -26,6 +26,7 @@ function load(src, callback) { // helper for load content
   xhr.send();
 }
 
+console.log(window.location)
 load("./resources/pages/router.json", json => { // load router
   state.routes = JSON.parse(json);
   const promises = [];
@@ -41,7 +42,6 @@ load("./resources/pages/router.json", json => { // load router
         state.router[path] = value; // store content (key, value)
       });
     }
-    console.log(window.location)
     history.replaceState(null, null, handlePathname(window.location.pathname)); // Load content
   });
 });
