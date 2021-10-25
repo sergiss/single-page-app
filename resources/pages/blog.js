@@ -26,7 +26,7 @@ export default {
         <div class="card">
           <h2>About Me</h2>
           <div style="overflow:hidden;">
-              <img class="" style="height:100px;" src="./resources/images/avatar.jpg" alt="my photo"></img>
+              <img style="height:100px;" src="./resources/images/avatar.jpg" alt="my photo"></img>
           </div>
           <p>Hy my name is Alf, I love the cats in culpa qui officia deserunt mollit anim...</p>
         </div>
@@ -44,28 +44,32 @@ export default {
         </div>
         <div class="card">
           <h3>Follow Me</h3>
-          <a href="https://github.com/sergiss" target="_blank">
+          <div class="follow-me">
+          <a href="https://github.com/sergiss" target="_blank" rel="noopener noreferrer">
             <img
-              alt="github"
+              alt="github"              
               src="./resources/images/octocat.jpg"
               width="auto"
               height="42"              
             />
-            <a href="https://github.com/sergiss" target="_blank">
+            </a>
+            <a href="https://github.com/sergiss" target="_blank" rel="noopener noreferrer">
             <img
-              alt="github"
+              alt="github"              
               src="./resources/images/in.svg"
               width="auto"
               height="42"              
             />
-            <a href="https://github.com/sergiss" target="_blank">
+            </a>
+            <a href="https://github.com/sergiss" target="_blank" rel="noopener noreferrer">
             <img
               alt="github"
               src="./resources/images/twitter.svg"
               width="auto"
               height="42"              
             />
-          
+            </a>
+          </div>
         </div>
       </div>
     </div> `;

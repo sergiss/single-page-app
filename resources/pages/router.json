@@ -18,7 +18,7 @@
         "date": "Aug 9, 2021",
         "title": "Entry 1",
         "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "image": "/resources/images/entry1.png",
+        "image": "/resources/images/entry1.jpg",
         "type": "blog-entry" 
     },
     {
@@ -36,7 +36,7 @@
         "date": "Sep 02, 2021",
         "title": "Entry 3",
         "description": "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.",
-        "image": "/resources/images/entry3.png",
+        "image": "/resources/images/entry3.jpg",
         "type": "blog-entry"
     }
 ]

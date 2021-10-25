@@ -16,14 +16,14 @@ body {
 
 #root {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+  background-color: #efefef;
 }
 
 header {
-  height: 50px;
   z-index: 1;
-  position: fixed;
-  top: 0;
-  width: 100%;
   background-color: gray;
   color: white;
   display: flex;
@@ -41,21 +41,16 @@ header img {
 }
 
 .content {
-  height: calc(100% - 80px);
-  margin-top: 50px;
-  overflow-x: hidden;
+  flex: 1;
+  overflow-y: auto;
   display: flex;
   justify-content: center;
-  background-color: #efefef;
   padding: 10px;
 }
 
 footer {
   z-index: 1;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  flex: 0;
   background-color: #616161;
   display: flex;
   align-items: center;
@@ -89,8 +84,6 @@ a:active {
 
 /*************** Blog ***************/
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
 .blog {  
   max-width: 1100px;
 }
@@ -100,13 +93,11 @@ a:active {
   width: 75%;
 }
 
-/* Right column */
 .rightcolumn {
   float: left;
   width: 25%;
 }
 
-/* Preview image */
 .preview-image {
   width: 345px;
   height: 200px;
@@ -114,7 +105,6 @@ a:active {
   overflow: hidden;
 }
 
-/* Add a card effect for articles */
 .card {
    background-color: white;
    padding: 20px;
@@ -122,7 +112,6 @@ a:active {
    overflow: hidden;   
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
@@ -162,4 +151,9 @@ a:active {
  position: fixed;
  top: 0;
  left: 0;
+}
+
+.follow-me {
+  display: flex;
+  flex-direction: row;  
 }
