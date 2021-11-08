@@ -23,7 +23,7 @@ export default {
         <div class="card">
           <h2>About Me</h2>
           <div style="overflow:hidden;">
-              <img style="height:100px;" src="./resources/images/avatar.jpg" alt="my photo"></img>
+              <img style="height:100px;" src="/resources/images/avatar.jpg" alt="my photo"></img>
           </div>
           <p>Hy my name is Alf, I love the cats in culpa qui officia deserunt mollit anim...</p>
         </div>
@@ -42,7 +42,7 @@ export default {
           <a href="https://github.com/sergiss" target="_blank" rel="noopener noreferrer">
             <img
               alt="github"              
-              src="./resources/images/octocat.jpg"
+              src="/resources/images/octocat.jpg"
               width="auto"
               height="42"              
             />
@@ -50,7 +50,7 @@ export default {
             <a href="https://github.com/sergiss" target="_blank" rel="noopener noreferrer">
             <img
               alt="github"              
-              src="./resources/images/in.svg"
+              src="/resources/images/in.svg"
               width="auto"
               height="42"              
             />
@@ -58,7 +58,7 @@ export default {
             <a href="https://github.com/sergiss" target="_blank" rel="noopener noreferrer">
             <img
               alt="github"
-              src="./resources/images/twitter.svg"
+              src="/resources/images/twitter.svg"
               width="auto"
               height="42"              
             />

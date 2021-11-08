@@ -1,6 +1,6 @@
 export default {
   build: () => {
-    document.title = "Entry 3";
+    document.title = "My Blog | Entry 3";
 
     return `
     <div class="entry">

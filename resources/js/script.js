@@ -16,6 +16,7 @@ function handlePathname(path) { // resolve pathname
 state.handlePathname = handlePathname;
 
 function load(src, callback) { // helper for load content
+  console.log(src)
   var xhr = new XMLHttpRequest();
   xhr.onload = function () {
     if (xhr.status == 200) {
