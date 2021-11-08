@@ -6,21 +6,18 @@ export default {
     const entries = state.routes
       .filter((e) => e.type === "blog-entry")
       .sort((a, b) => new Date(a.date) - new Date(b.date));
-
     // Generate HTML
     return `<div class="blog">
       <div class="leftcolumn">
         ${entries
-          .map(
-            (e) =>
+          .map((e) =>
               `<div class="card" style="cursor:pointer" href="${e.paths[0]}" content-link>
                 <h2 style="margin-bottom: 5px">${e.title}</h2>
                 <p style="margin-top: 5px">${e.date}</p>
                 <img class="preview-image" src=${e.image} alt="preview"></img>
                 <p>${e.description}</p>
               </div>`
-          )
-          .join("")}
+          ).join("")}
       </div>
       <div class="rightcolumn">
         <div class="card">
@@ -32,15 +29,12 @@ export default {
         </div>
         <div class="card">
           <h3>Popular Post</h3>
-          ${entries
-            .slice(0, Math.min(entries.length, 3))
-            .map(
-              (e) =>
+          ${entries.slice(0, Math.min(entries.length, 3))
+            .map((e) =>
                 `<div style="cursor:pointer; overflow:hidden;" href="${e.paths[0]}" content-link>
                   <img class="preview-image" style="height:100px;" src=${e.image} alt="preview"></img>
                 </div>`
-            )
-            .join("")}
+            ).join("")}
         </div>
         <div class="card">
           <h3>Follow Me</h3>
