@@ -5,7 +5,7 @@
         "content": "../pages/404.js"
     },
     {
-        "paths": ["/", "/index.html", "/blog", "/single-page-app"],
+        "paths": ["/", "/index.html", "/blog", "/single-page-app/"],
         "content": "../pages/blog.js"
     },
     {

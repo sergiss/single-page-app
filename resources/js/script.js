@@ -5,14 +5,13 @@ const root = document.querySelector("#root");
 root.innerHTML = index.build();
 
 function handlePathname(path) { // resolve pathname
-  console.log(path)
-    let route = state.router[path];
-    if(!route || route === undefined) {
-      route = state.router["404"];
-    }
-    root.querySelector(".content").innerHTML = route.build(state);
-    if(route.script) route.script();
-    return path;
+  let route = state.router[path];
+  if(!route || route === undefined) {
+    route = state.router["404"];
+  }
+  root.querySelector(".content").innerHTML = route.build(state);
+  if(route.script) route.script();
+  return path;
 }
 state.handlePathname = handlePathname;
 
