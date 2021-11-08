@@ -2,7 +2,7 @@
 
 Single page web application implementation example without frameworks. Only HTML5, CSS & Javascript.
 
-<p> <strong>Note:</strong> Requires a web server </p>
+[Demo](https://sergiss.github.io/single-page-app/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
