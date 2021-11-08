@@ -5,6 +5,7 @@ const root = document.querySelector("#root");
 root.innerHTML = index.build();
 
 function handlePathname(path) { // resolve pathname
+  console.log(path)
     let route = state.router[path];
     if(!route || route === undefined) {
       route = state.router["404"];
@@ -16,7 +17,6 @@ function handlePathname(path) { // resolve pathname
 state.handlePathname = handlePathname;
 
 function load(src, callback) { // helper for load content
-  console.log(src)
   var xhr = new XMLHttpRequest();
   xhr.onload = function () {
     if (xhr.status == 200) {
