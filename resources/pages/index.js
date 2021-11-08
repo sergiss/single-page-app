@@ -1,7 +1,7 @@
 export default {
   build: () => {
 
-    const logo = "/favicon.ico";
+    const logo = "favicon.ico";
     const title = "My Blog";
     const year = new Date().getFullYear();
     const href = "http://sergiosoriano.com";
